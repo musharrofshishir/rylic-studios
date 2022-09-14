@@ -1,0 +1,197 @@
+/* Common CSS */
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+button {
+    outline: none !important;
+    border: none;
+    background-color: transparent;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Common CSS */
+/* Fonts */
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('/assets/fonts/GT-Walsheim-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('/assets/fonts/GT-Walsheim-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('/assets/fonts/GT-Walsheim-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'universo-bold';
+    src: url('/assets/fonts/Universo-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'universo-black';
+    src: url('/assets/fonts/Universo-Black.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'universo-thin';
+    src: url('/assets/fonts/Universo-Light.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'universo-rg';
+    src: url('/assets/fonts/Universo-Regular.ttf');
+    font-style: normal;
+}
+
+/* Fonts */
+/* Footer */
+._rylic_footer_wrapper {
+    padding: 70px 0 55px;
+}
+
+._rylic_footer_content_txt {
+    margin: 24px 0;
+}
+
+._rylic_footer_content_title {
+    font-family: universo;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 1.2px;
+    color: #FFFFFF;
+}
+
+._rylic_footer_content_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 20px;
+}
+
+._rylic_footer_content_li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.24);
+    border-radius: 50%;
+    transition: .2s all ease;
+}
+
+._rylic_footer_content_li:hover {
+    border-color: transparent;
+}
+
+._rylic_footer_content_li._dribbble:hover {
+    background-color: #EA4C89;
+}
+
+._rylic_footer_content_li._instagram:hover {
+    background-color: #FD1D1D;
+}
+
+._rylic_footer_content_li._fb:hover {
+    background-color: #4267B2;
+}
+
+._rylic_footer_content_li._be:hover {
+    background-color: #053eff;
+}
+
+._rylic_footer_content_li._linkd:hover {
+    background-color: #0e76a8;
+}
+
+._rylic_footer_content_li_ic {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._rylic_footer_content_copy {
+    margin: 38px 0;
+}
+
+._rylic_footer_content_copy_title {
+    font-family: 'GT Walsheim';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Footer */
+
+/* Alpine */
+
+/* Alpine */
+/* Variables */
+:root {
+    --white: #fff;
+    --black: #000;
+    --bg: #040229;
+    --color-br: #310000;
+    --color-or1: #FE5100;
+    --color-or2: #FF5E3B;
+    --color-btn: #FF5E3A;
+    --color-yl: #FFDA58;
+    /* Fonts */
+    --gtRg: 'GT Walsheim';
+    --gtMd: 'GT Walsheim';
+    --gtBd: 'GT Walsheim';
+}
+
+/* Variables */
