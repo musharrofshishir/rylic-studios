@@ -44,19 +44,20 @@ button {
 ul {
     list-style: none;
 }
+
 /* Common CSS */
 /* Fonts */
 @font-face {
     font-family: 'GT Walsheim';
     src: url('/assets/fonts/GT-Walsheim-Bold.ttf') format('truetype');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GT Walsheim';
     src: url('/assets/fonts/GT-Walsheim-Medium.ttf') format('truetype');
-    font-weight: medium;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -94,14 +95,244 @@ ul {
 }
 
 /* Fonts */
+/* BIG */
+._rylic_big_wrapper {
+    background: linear-gradient(125.17deg, #F1E4E4 -45.13%, #C3BEAE 109.3%);
+}
 
+/* Service */
+._rylic_service_wrapper {
+    padding: 100px 0;
+}
+
+._rylic_service_heading_title {
+    font-family: universo;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #121212;
+}
+
+._rylic_service_heading_title2 {
+    font-family: 'GT Walsheim';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #656565;
+}
+
+._rylic_service_content_wrap {
+    margin: 68px 0 0;
+}
+
+._rylic_service_content {
+    margin: 0 -12px;
+}
+
+._rylic_service_content_top {
+    background-image: url("../images/service1.png");
+    background-size: cover;
+    border-radius: 15px;
+    min-height: 240px;
+    max-width: 270px;
+    position: relative;
+}
+
+._rylic_service_content_top_inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    max-height: 240px;
+    min-height: 240px;
+    padding: 20px 10px 36px;
+}
+
+._service1_top ._rylic_service_content_top_img_wrap {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+}
+
+._service2_top {
+    background-image: url("../images/service2.png");
+}
+
+._service3_top {
+    background-image: url("../images/service3.png");
+}
+
+._service1_top ._rylic_service_content_top_img {
+    margin-top: -28px;
+}
+
+._service2_top ._rylic_service_content_top_img_wrap {
+    position: absolute;
+    left: 50%;
+    top: 36px;
+    transform: translate(-50%, -36px);
+}
+
+._service2_top ._rylic_service_content_top_img {
+    margin-top: 0px;
+}
+
+._service3_top ._rylic_service_content_top_img_wrap {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+}
+
+._service3_top ._rylic_service_content_top_img {
+    margin-top: -28px;
+}
+
+
+._rylic_service_content_top_title {
+    font-family: 'Universo';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #121212;
+    max-width: 128px;
+}
+
+._service2_top ._rylic_service_content_top_title {
+    color: #fff;
+    max-width: 260px;
+}
+
+._service3_top ._rylic_service_content_top_title {
+    color: #fff;
+    max-width: 270px;
+}
+
+._rylic_service_content_txt {
+    margin: 30px 0;
+}
+
+._service2_txt {
+    margin-top: 0;
+}
+
+._rylic_service_content_p {
+    font-family: 'GT Walsheim';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    color: #121212;
+    max-width: 95%;
+}
+
+/* Service */
+/* BIG */
+/* Process */
+._rylic_process_wrapper {
+    padding: 100px 0;
+}
+
+._rylic_process_heading {
+    /* text-align: center; */
+}
+
+._rylic_process_heading_title {
+    font-family: 'GT Walsheim';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #49F595;
+    margin: 0 0 18px;
+}
+
+._rylic_process_heading_title2 {
+    font-family: 'Universo';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    max-width: 90%;
+}
+
+._rylic_process_heading_title2 span {
+    color: #F8CE68;
+}
+
+._rylic_process_content_wrap {
+    margin-top: 60px;
+}
+
+._rylic_process_content1 {
+    margin: 0 0 100px;
+}
+
+._rylic_process_content_num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #49F595;
+    border-radius: 50%;
+}
+
+._rylic_process_content_num_txt {
+    font-family: 'GT Walsheim';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #121212;
+}
+
+._rylic_process_content_txt {
+    margin: 15px 0;
+}
+
+._rylic_process_content_p {
+    font-family: 'GT Walsheim';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: #C0C0C9;
+}
+
+._rylic_process_content_p span {
+    color: #FFFFFF;
+}
+
+._rylic_process_content_mid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+._rylic_process_content_mid_ul {
+    width: fit-content;
+}
+
+._rylic_process_content_mid_li {
+    width: fit-content;
+}
+
+/* Process */
 /*Project css start*/
 ._rylic_project_wrapper {
     padding: 100px 0;
 }
+
 ._rylic_project_top {
-    margin:0 0 50px;
+    margin: 0 0 50px;
 }
+
 ._rylic_project_top_text_para {
     font-family: 'GT Walsheim';
     font-weight: 700;
@@ -110,27 +341,32 @@ ul {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #FF5722;
-    margin:0 0 18px;
+    margin: 0 0 18px;
 }
+
 ._rylic_project_top_text_title {
-    font-family: 'Universo';
+    font-family: universo;
     font-weight: 800;
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.01em;
     color: #FFFFFF;
 }
+
 ._rylic_project_top_text_title span {
-    color:#F8CE68;
+    color: #F8CE68;
 }
+
 ._rylic_project_card {
-    margin:0 0 80px;
+    margin: 0 0 80px;
 }
+
 ._rylic_project_card_image {
-    padding:16px;
-    background:#fff;
-    margin:0 0 30px;
+    padding: 16px;
+    background: #fff;
+    margin: 0 0 30px;
 }
+
 ._rylic_project_card_title {
     font-family: 'GT Walsheim';
     font-weight: 700;
@@ -138,25 +374,57 @@ ul {
     line-height: 27px;
     color: #FFFFFF;
 }
-._rylic_project_card_img {
-    width:100%;
-    height:auto;
-    display:block;
-}
-/*Project css end*/
 
+._rylic_project_card_img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Project css end*/
+/* Marque */
+._real_marque_wrapper {
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+._real_marque_content_wrap {
+    width: 130%;
+    height: 90px;
+    background-color: #f8ce68;
+    display: flex;
+    align-items: center;
+    transform: rotate(-5deg) translate(-50px, 50px);
+    transform-origin: left bottom;
+}
+
+._real_marque_content_ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+._real_marque_content_li {
+    margin: 5px 15px;
+}
+
+/* Marque */
 /* testimonial css --*/
 ._rylic_testimonial_wrapper {
-    padding:100px 0;
-    position:relative;
+    padding: 100px 0;
+    position: relative;
     z-index: 1;
 }
+
 ._rylic_testimonial_top {
-    margin:0 0 50px;
+    margin: 0 0 50px;
 }
+
 ._rylic_testimonial_top_text {
     text-align: center;
 }
+
 ._rylic_testimonial_text_para {
     font-family: 'GT Walsheim';
     font-weight: 700;
@@ -165,24 +433,28 @@ ul {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #7D67FF;
-    margin:0 0 18px;
+    margin: 0 0 18px;
 }
+
 ._rylic_testimonial_text_title {
-    font-family: 'Universo';
+    font-family: universo;
     font-weight: 800;
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.01em;
     color: #FFFFFF;
 }
+
 ._rylic_testimonial_text_title span {
-    color:#F8CE68;
+    color: #F8CE68;
 }
-._rylic_testimonial_card{
+
+._rylic_testimonial_card {
     border: 1px solid rgb(255 255 255 / 16%);
     padding: 25px;
-    margin:0 0 20px;
+    margin: 0 0 20px;
 }
+
 ._rylic_testimonial_card_para {
     font-family: 'GT Walsheim';
     font-weight: 500;
@@ -190,27 +462,31 @@ ul {
     line-height: 31px;
     color: #FFFFFF;
     max-width: 84%;
-    margin:0 0 33px;
+    margin: 0 0 33px;
 }
+
 ._rylic_testimonial_card_bottom {
     display: flex;
     align-items: center;
 }
+
 ._rylic_testimonial_card_bottom_image {
-    background:#D9D9D9;
-    width:44px;
-    height:44px;
-    border-radius:50%;
-    margin:0 16px 0 0;
+    background: #D9D9D9;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin: 0 16px 0 0;
 }
+
 ._rylic_testimonial_bottom_text_para {
     font-family: 'GT Walsheim';
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
     color: #F8CE68;
-    margin:0 0 8px;
+    margin: 0 0 8px;
 }
+
 ._rylic_testimonial_bottom_text_title {
     font-family: 'GT Walsheim';
     font-weight: 400;
@@ -219,8 +495,86 @@ ul {
     color: #FFFFFF;
     opacity: 0.75;
 }
+
 /* testimonial css --*/
 
+/* Trusted */
+._rylic_trusted_wrapper {
+    padding: 100px 0 50px;
+}
+
+._rylic_trusted_heading_title {
+    font-family: 'GT Walsheim';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+._rylic_trusted_content_wrap {
+    margin: 50px 0 0;
+}
+
+._rylic_trusted_content {
+    margin: 40px 0;
+}
+
+._rylic_trusted_content_img {
+    width: 164px;
+    max-width: 164px;
+    margin: 0 auto;
+}
+
+/* Trusted */
+/* Cta */
+._rylic_cta_img {
+    width: 140px;
+    max-width: 140px;
+    margin-bottom: -20px;
+}
+
+._rylic_cta_content_wrap {
+    border-top: 2px solid rgba(255, 255, 255, .24);
+    border-bottom: 2px solid rgba(255, 255, 255, .24);
+    padding: 40px 0;
+}
+
+._rylic_cta_content_title {
+    font-family: 'Universo';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    max-width: 80%;
+}
+
+._rylic_cta_content_btn_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+._cta_btn {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 32.81%, rgba(0, 0, 0, 0.02) 100%), #F8C768;
+    background-blend-mode: soft-light, normal;
+    box-shadow: inset -2.0348px -2.0348px 2.0348px rgba(0, 0, 0, 0.05), inset 2.0348px 2.0348px 2.0348px rgba(255, 255, 255, 0.2);
+    border-radius: 56.6803px;
+    padding: 21px 35px;
+    display: flex;
+    align-items: baseline;
+    gap: 0 16px;
+}
+
+._cta_btn ._rylic_cta_content_btn_txt {
+    font-family: 'GT Walsheim';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+/* Cta */
 /* Footer */
 ._rylic_footer_wrapper {
     padding: 70px 0 55px;
