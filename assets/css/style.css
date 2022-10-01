@@ -100,9 +100,169 @@ ul {
     background: linear-gradient(125.17deg, #F1E4E4 -45.13%, #C3BEAE 109.3%);
 }
 
+/* Header */
+/* Navbar */
+._rylic_navbar_wrap {
+    background-color: var(--bg) !important;
+}
+
+._rylic_nav_btn {
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+    padding: 12px 20px !important;
+}
+
+._rylic_nav_btn ._rylic_cta_content_btn_ic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0px 8.92975px 16.3712px rgba(0, 0, 0, 0.25), inset 0px -2.23244px 2.97658px rgba(0, 0, 0, 0.45), inset 0px -5.95317px 7.44146px rgba(0, 0, 0, 0.29); */
+}
+
+/* Navbar */
+
+._rylic_header_wrapper {
+    position: relative;
+}
+
+._rylic_header_shape1 {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+._rylic_header_shape2 {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    transform: translate(0, 50%);
+}
+
+._rylic_header_cursor_wrap {
+    position: absolute;
+    min-height: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+._rylic_header_cursor {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+._rylic_header_cursor1 {
+    left: 50px;
+}
+
+._rylic_header_cursor2 {
+    right: 160px;
+}
+
+._rylic_header_cursor3 {
+    top: 70%;
+    left: calc(50% - 50px);
+    transform: translate(-50%, 0);
+}
+
+._rylic_header_cursor_img2 {
+    position: absolute;
+    width: fit-content;
+    top: -40px;
+    left: -44px;
+}
+
+._rylic_header_shape_r_wrap {
+    position: absolute;
+    right: 300px;
+    bottom: -40px;
+    transform: rotate(-20deg);
+}
+
+._rylic_header_wrap {
+    padding: 100px 0 50px;
+    min-height: 750px;
+}
+
+._rylic_header_txt_title {
+    font-family: 'Universo';
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin: 0 auto 18px;
+    max-width: 50%;
+}
+
+._rylic_header_txt_title2 {
+    background: #F8CE68;
+    width: fit-content;
+    color: #040229;
+    text-transform: uppercase;
+    padding: 4px 18px;
+    margin: 10px auto;
+    position: relative;
+}
+
+._rylic_header_txt_title2 span {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(100%, -100%);
+}
+
+._rylic_header_txt_p {
+    font-family: 'GT Walsheim';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.72;
+    max-width: 45%;
+    margin: 48px auto 0;
+}
+
+._rylic_header_circular_txt_wrap {
+    width: fit-content;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+._arrow {
+    /* animation: floating 3s ease-in-out infinite; */
+}
+
+@keyframes floating {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-20px);
+    }
+
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+}
+
+/* Header */
 /* Service */
 ._rylic_service_wrapper {
-    padding: 100px 0;
+    padding: 130px 0 100px;
 }
 
 ._rylic_service_heading_title {
@@ -238,7 +398,7 @@ ul {
 }
 
 ._rylic_process_heading {
-    /* text-align: center; */
+    text-align: center;
 }
 
 ._rylic_process_heading_title {
@@ -260,6 +420,7 @@ ul {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     max-width: 90%;
+    margin: 0 auto;
 }
 
 ._rylic_process_heading_title2 span {
@@ -321,6 +482,41 @@ ul {
 
 ._rylic_process_content_mid_li {
     width: fit-content;
+    margin: 14px 0;
+}
+
+._rylic_process_content_mid_li:nth-child(odd) {
+    transform: rotate(3deg);
+}
+
+._rylic_process_content_mid_li:nth-child(even) {
+    transform: rotate(-3deg);
+
+}
+
+._rylic_process_bottom_wrap {
+    margin: 50px 0;
+    position: relative;
+    z-index: 2;
+}
+
+._rylic_process_bottom_shape {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    opacity: .2;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    z-index: -1;
+    position: absolute;
+}
+
+._rylic_process_bottom_btn_wrap {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 24px;
+    background: #040229;
 }
 
 /* Process */
@@ -498,6 +694,94 @@ ul {
 
 /* testimonial css --*/
 
+/* Instagram */
+._rylic_instagram_wrapper {
+    padding: 100px 0;
+    position: relative;
+    z-index: 2;
+}
+
+._rylic_instagram_bg {
+    position: absolute;
+    background: linear-gradient(124.71deg, #EAD5C1 2.12%, #CFCFCF 58.09%, #C7CFE2 108.23%);
+    width: 100%;
+    height: calc(60% - 50px);
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+._rylic_instagram_header_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 20px;
+}
+
+._rylic_instagram_header_img {
+    width: 65px;
+}
+
+._rylic_instagram_header_title_txt {
+    font-family: 'Universo';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #121212;
+}
+
+._rylic_instagram_content_wrap {
+    margin: 60px 0 0;
+}
+
+._rylic_instagram_content_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px 24px;
+    margin: 0 0 24px;
+    overflow: auto;
+}
+
+._rylic_instagram_content_ul::-webkit-scrollbar {
+    display: none;
+}
+
+._rylic_instagram_content_ul::-webkit-scrollbar-thumb {
+    /* Foreground */
+    background: #999;
+}
+
+._rylic_instagram_content_ul::-webkit-scrollbar-track {
+    /* Background */
+    background: #333;
+}
+
+._rylic_instagram_content_ul1 {
+    overflow: auto;
+}
+
+._rylic_instagram_content_li {
+    width: 300px;
+    flex: 0 0 300px;
+    max-width: 300px;
+    padding: 10px;
+    background: #FFFFFF;
+    box-shadow: 16px 30px 40px rgba(4, 2, 41, 0.08);
+}
+
+._rylic_instagram_content_li_img_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._rylic_instagram_content_li_img {
+    width: 100%;
+}
+
+/* Instagram */
 /* Trusted */
 ._rylic_trusted_wrapper {
     padding: 100px 0 50px;
