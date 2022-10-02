@@ -236,10 +236,11 @@ ul {
     bottom: -100px;
     left: 50%;
     transform: translate(-50%, 0);
+    z-index: 2;
 }
 
 ._arrow {
-    /* animation: floating 3s ease-in-out infinite; */
+    animation: floating 3s ease-in-out infinite;
 }
 
 @keyframes floating {
@@ -600,7 +601,10 @@ ul {
 ._rylic_process_content_mid_li {
     width: fit-content;
     margin: 14px 0;
+    transition: .35s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform-origin: bottom;
 }
+
 
 ._rylic_process_content_mid_li:nth-child(odd) {
     transform: rotate(3deg);
@@ -608,7 +612,9 @@ ul {
 
 ._rylic_process_content_mid_li:nth-child(even) {
     transform: rotate(-3deg);
-
+}
+._rylic_process_content_mid_li:hover{
+    transform: rotate(0deg) !important;
 }
 
 ._rylic_process_bottom_wrap {
