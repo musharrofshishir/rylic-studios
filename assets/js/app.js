@@ -16,6 +16,10 @@ new Splide( '._rylic_port_slider',{
   width: 'calc(90% - 26px)',
   fixedWidth : '370px',
   pagination: false,
+  autoplay: true,
+  interval: 3000,
+  pauseOnhover: true,
+  easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
 } ).mount();
 
 new Splide( '._rylic_testimonial_slider',{
@@ -25,6 +29,10 @@ new Splide( '._rylic_testimonial_slider',{
   perMove: 1,
   gap: 30,
   fixedWidth : '470px',
+  autoplay: true,
+  interval: 3000,
+  pauseOnhover: true,
+  easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
 } ).mount();
 // GSAP
 gsap.registerPlugin(ScrollTrigger);
