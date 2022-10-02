@@ -6,6 +6,26 @@ const date ={
     return getDate.getFullYear()
   }
 }
+// Splide
+new Splide( '._rylic_port_slider',{
+  type   : 'loop',
+  perPage: 3,
+  arrows: true,
+  perMove: 1,
+  gap: 30,
+  width: 'calc(90% - 26px)',
+  fixedWidth : '370px',
+  pagination: false,
+} ).mount();
+
+new Splide( '._rylic_testimonial_slider',{
+  type   : 'loop',
+  perPage: 3,
+  arrows: false,
+  perMove: 1,
+  gap: 30,
+  fixedWidth : '470px',
+} ).mount();
 // GSAP
 gsap.registerPlugin(ScrollTrigger);
 // marque animation

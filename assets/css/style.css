@@ -263,8 +263,13 @@ ul {
 /* Service */
 ._rylic_service_wrapper {
     padding: 130px 0 100px;
+    position: relative;
 }
-
+._rylic_service_shape{
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+}
 ._rylic_service_heading_title {
     font-family: universo;
     font-weight: 400;
@@ -391,10 +396,122 @@ ul {
 }
 
 /* Service */
+._rylic_port_divider {
+    background: #592F00;
+    opacity: 0.24;
+}
+
+/* Portfolio */
+._rylic_port_wrapper {
+    padding: 100px 0;
+}
+._rylic_port_wrap{
+    position: relative;
+
+}
+._rylic_port_shape{
+    position: absolute;
+    top: -90px;
+    left: 0;
+}
+._rylic_port_wrapper ._rylic_service_heading_title2 {
+    margin: 0 0 30px;
+}
+
+._rylic_port_wrapper ._rylic_service_heading_title span {
+    color: #ED2975;
+}
+
+._rylic_port_slider_wrap {
+    padding: 50px 0;
+}
+
+._rylic_port_slider_inner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+._rylic_port_slider_arrow_wrap {
+    position: relative;
+    top: -100px;
+}
+
+._port_btn {
+    background: none;
+    transition: .2s all ease;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._port_prev {
+    left: auto;
+    right: 236px;
+    /* top: -40px; */
+}
+
+._port_prev g {
+    transition: .2s all ease;
+}
+
+._port_prev:hover svg g {
+    opacity: 1;
+}
+
+
+._port_next {
+    right: 180px;
+    /* top: -40px; */
+}
+
+._port_next g {
+    transition: .2s all ease;
+}
+
+._port_next:hover svg g {
+    opacity: 1;
+}
+
+._rylic_port_slider_content {
+    position: relative;
+    padding: 20px 0;
+    transition: .2s all ease;
+}
+
+._rylic_port_slider_ball {
+    position: absolute;
+    width: fit-content;
+    left: 50%;
+    bottom: -100px;
+    transform: translate(-50%, 0);
+    transition: .2s all ease;
+}
+
+._rylic_port_slider_content:hover ._rylic_port_slider_ball {
+    bottom: -25px;
+}
+
+._rylic_port_slider_content:hover {
+    transform: translate(0, -20px);
+}
+
+/* Portfolio */
 /* BIG */
 /* Process */
 ._rylic_process_wrapper {
-    padding: 100px 0;
+    padding: 100px 0 10px;
+    position: relative;
+}
+._rylic_process_shape1{
+    position: absolute;
+    top: -100px;
+    left: 300px;
+}
+._rylic_process_shape2{
+    position: absolute;
+    top: -70px;
+    right: 300px;
 }
 
 ._rylic_process_heading {
@@ -522,7 +639,7 @@ ul {
 /* Process */
 /*Project css start*/
 ._rylic_project_wrapper {
-    padding: 100px 0;
+    padding: 90px 0 100px;
 }
 
 ._rylic_project_top {
@@ -542,7 +659,7 @@ ul {
 
 ._rylic_project_top_text_title {
     font-family: universo;
-    font-weight: 800;
+    font-weight: 400;
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.01em;
@@ -555,12 +672,24 @@ ul {
 
 ._rylic_project_card {
     margin: 0 0 80px;
+    transition: .2s all ease;
 }
 
 ._rylic_project_card_image {
-    padding: 16px;
+    /* padding: 16px; */
     background: #fff;
+    border: 16px solid #fff;
     margin: 0 0 30px;
+    transition: .2s all ease;
+    overflow: hidden;
+}
+
+._rylic_project_card_image:hover ._rylic_project_card_img {
+    transform: scale(1.1);
+}
+
+._rylic_project_card_img {
+    transition: .4s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 ._rylic_project_card_title {
@@ -583,6 +712,18 @@ ul {
     position: relative;
     padding: 120px 0;
     overflow: hidden;
+}
+
+._real_marque_wrap {
+    position: relative;
+}
+
+._real_marque_shape {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -20px);
+    z-index: 2;
 }
 
 ._real_marque_content_wrap {
@@ -608,13 +749,33 @@ ul {
 /* Marque */
 /* testimonial css --*/
 ._rylic_testimonial_wrapper {
-    padding: 100px 0;
+    padding: 100px 0 160px;
     position: relative;
     z-index: 1;
+    overflow-x: hidden;
+}
+
+._rylic_testimonial_shape {
+    position: absolute;
+    top: 0;
+    right: 300px;
+}
+
+._rylic_testimonial_duck_shape {
+    position: absolute;
+    bottom: 0;
+    right: 400px;
 }
 
 ._rylic_testimonial_top {
     margin: 0 0 50px;
+    position: relative;
+}
+
+._rylic_testimonial_chat_shape {
+    position: absolute;
+    top: 50%;
+    transform: translate(100px, -50%);
 }
 
 ._rylic_testimonial_top_text {
@@ -634,7 +795,7 @@ ul {
 
 ._rylic_testimonial_text_title {
     font-family: universo;
-    font-weight: 800;
+    font-weight: 400;
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.01em;
@@ -645,10 +806,18 @@ ul {
     color: #F8CE68;
 }
 
+._rylic_testimonial_slider {
+    margin-right: -100%;
+}
+
 ._rylic_testimonial_card {
     border: 1px solid rgb(255 255 255 / 16%);
     padding: 25px;
     margin: 0 0 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 ._rylic_testimonial_card_para {
@@ -657,7 +826,7 @@ ul {
     font-size: 20px;
     line-height: 31px;
     color: #FFFFFF;
-    max-width: 84%;
+    /* max-width: 84%; */
     margin: 0 0 33px;
 }
 
@@ -692,6 +861,30 @@ ul {
     opacity: 0.75;
 }
 
+._rylic_testimonial_slider_wrap .splide__pagination {
+    bottom: 100px;
+    display: flex;
+    align-items: center;
+    /* gap: 0 5px; */
+}
+
+._rylic_testimonial_slider_wrap .splide__pagination__page {
+    background: #464465;
+    opacity: 0.6;
+    border-radius: 300px;
+    width: 16px;
+    height: 8px;
+    transition: .2s all ease;
+}
+
+._rylic_testimonial_slider_wrap .splide__pagination__page.is-active {
+    opacity: 1;
+    width: 65px;
+    height: 8px;
+    transform: scale(1);
+    transition: .2s all ease;
+}
+
 /* testimonial css --*/
 
 /* Instagram */
@@ -699,6 +892,12 @@ ul {
     padding: 100px 0;
     position: relative;
     z-index: 2;
+}
+
+._rylic_instagram_shape {
+    position: absolute;
+    top: -70px;
+    left: 200px;
 }
 
 ._rylic_instagram_bg {
@@ -811,6 +1010,18 @@ ul {
 
 /* Trusted */
 /* Cta */
+._rylic_cta_wrapper{
+    position: relative;
+}
+._rylic_cta_img_wrap{
+    position: relative;
+}
+._rylic_cta_shape{
+    position: absolute;
+    left: calc( 50% + 100px );
+    top: 45px;
+    transform: rotate(-20deg);
+}
 ._rylic_cta_img {
     width: 140px;
     max-width: 140px;
