@@ -36,6 +36,7 @@ new Splide( '._rylic_testimonial_slider',{
 } ).mount();
 // GSAP
 gsap.registerPlugin(ScrollTrigger);
+
 // marque animation
 gsap.fromTo('._real_marque_content_ul',{
   // scrollTrigger:{

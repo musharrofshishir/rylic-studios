@@ -165,7 +165,7 @@ ul {
 ._rylic_header_cursor3 {
     /* top: calc(75% - 5px); */
     top: calc(75% - 20px);
-    left: calc(50% - 50px);
+    left: calc(50% - 70px);
     transform: translate(-50%, 0);
 }
 
@@ -330,6 +330,7 @@ ul {
 
 ._service2_top {
     background-image: url("../images/service2.png");
+    background-color: #040229;
 }
 
 ._service3_top {
@@ -376,7 +377,7 @@ ul {
 
 ._service2_top ._rylic_service_content_top_title {
     color: #fff;
-    max-width: 260px;
+    max-width: 240px;
 }
 
 ._service3_top ._rylic_service_content_top_title {
@@ -446,6 +447,7 @@ ul {
 ._rylic_port_slider_inner {
     display: flex;
     justify-content: flex-end;
+    margin: 0 0 0 -25px;
 }
 
 ._rylic_port_slider_arrow_wrap {
@@ -494,19 +496,23 @@ ul {
     position: relative;
     padding: 20px 0;
     transition: .2s all ease;
+    cursor: grab;
 }
 
 ._rylic_port_slider_ball {
     position: absolute;
     width: fit-content;
     left: 50%;
-    bottom: -100px;
-    transform: translate(-50%, 0);
-    transition: .2s all ease;
+    bottom: -50px;
+    transform: translate(-50%, 0) scale(.1);
+    transition: .2s all cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    opacity: 0;
 }
 
 ._rylic_port_slider_content:hover ._rylic_port_slider_ball {
     bottom: -25px;
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
 }
 
 ._rylic_port_slider_content:hover {
@@ -708,14 +714,39 @@ ul {
     margin: 0 0 30px;
     transition: .2s all ease;
     overflow: hidden;
+    position: relative;
+
+}
+
+._rylic_project_card_image_view {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s all cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
 }
 
 ._rylic_project_card_image:hover ._rylic_project_card_img {
     transform: scale(1.1);
 }
 
+._rylic_project_card_image:hover ._rylic_project_card_image_view {
+    visibility: visible;
+    opacity: 1;
+
+}
+
 ._rylic_project_card_img {
-    transition: .4s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: .5s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 ._rylic_project_card_title {
@@ -1140,8 +1171,27 @@ ul {
     background-color: #EA4C89;
 }
 
-._rylic_footer_content_li._instagram:hover {
-    background-color: #FD1D1D;
+._rylic_footer_content_li._instagram {
+    position: relative;
+    z-index: 1;
+}
+
+._rylic_footer_content_li._instagram::before {
+    background: linear-gradient(262.99deg, #e32e37, #ee27a3), #e04583;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: .2s all ease;
+}
+
+._rylic_footer_content_li._instagram:hover::before {
+    opacity: 1;
 }
 
 ._rylic_footer_content_li._fb:hover {
@@ -1178,7 +1228,6 @@ ul {
 }
 
 /* Footer */
-
 /* Alpine */
 
 /* Alpine */
