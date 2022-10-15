@@ -478,10 +478,21 @@ ul {
     opacity: 1;
 }
 
+._port_next:hover {
+    opacity: 1;
+}
 
 ._port_next {
     right: 180px;
     /* top: -40px; */
+}
+
+._port_prev svg {
+    width: 18px;
+}
+
+._port_next svg {
+    width: 48px;
 }
 
 ._port_next g {
@@ -490,6 +501,16 @@ ul {
 
 ._port_next:hover svg g {
     opacity: 1;
+}
+
+._port_next svg path {
+    transition: .2s all ease;
+}
+
+._port_next:hover svg path {
+    opacity: 1;
+    fill: #000412;
+    stroke: #000412;
 }
 
 ._rylic_port_slider_content {
