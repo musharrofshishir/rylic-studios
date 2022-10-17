@@ -1,69 +1,24 @@
+gsap.registerPlugin(ScrollTrigger);
 
-var html = document.documentElement;
-var body = document.body;
+// Smooth scroll setup
+const bodyScrollBar = Scrollbar.init(document.body, { 
+  damping: 0.05, 
+  delegateTo: document
+ });
+ 
+bodyScrollBar.setPosition(0, 0);
+bodyScrollBar.track.xAxis.element.remove();
 
-var scroller = {
-  target: document.querySelector("#scroll-container"),
-  ease: 0.05, // <= scroll speed
-  endY: 0,
-  y: 0,
-  resizeRequest: 1,
-  scrollRequest: 0,
-};
-
-var requestId = null;
-
-TweenLite.set(scroller.target, {
-  rotation: 0.01,
-  force3D: true
+// How to get them to work together
+ScrollTrigger.scrollerProxy("body", {
+  scrollTop(value) {
+    if (arguments.length) {
+      bodyScrollBar.scrollTop = value;
+    }
+    return bodyScrollBar.scrollTop;
+  }
 });
 
-window.addEventListener("load", onLoad);
 
-function onLoad() {    
-  updateScroller();  
-  window.focus();
-  window.addEventListener("resize", onResize);
-  document.addEventListener("scroll", onScroll); 
-}
+// Regular ScrollTrigger stuff
 
-function updateScroller() {
-  
-  var resized = scroller.resizeRequest > 0;
-    
-  if (resized) {    
-    var height = scroller.target.clientHeight;
-    body.style.height = height + "px";
-    scroller.resizeRequest = 0;
-  }
-      
-  var scrollY = window.pageYOffset || html.scrollTop || body.scrollTop || 0;
-
-  scroller.endY = scrollY;
-  scroller.y += (scrollY - scroller.y) * scroller.ease;
-
-  if (Math.abs(scrollY - scroller.y) < 0.05 || resized) {
-    scroller.y = scrollY;
-    scroller.scrollRequest = 0;
-  }
-  
-  TweenLite.set(scroller.target, { 
-    y: -scroller.y 
-  });
-  
-  requestId = scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;
-}
-
-function onScroll() {
-  scroller.scrollRequest++;
-  if (!requestId) {
-    requestId = requestAnimationFrame(updateScroller);
-  }
-}
-
-function onResize() {
-  scroller.resizeRequest++;
-  if (!requestId) {
-    requestId = requestAnimationFrame(updateScroller);
-  }
-}
