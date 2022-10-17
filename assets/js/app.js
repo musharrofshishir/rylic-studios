@@ -35,7 +35,7 @@ new Splide( '._rylic_testimonial_slider',{
   easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
 } ).mount();
 // GSAP
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 // marque animation
 gsap.fromTo('._real_marque_content_ul',{

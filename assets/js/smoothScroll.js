@@ -21,4 +21,12 @@ ScrollTrigger.scrollerProxy("body", {
 
 
 // Regular ScrollTrigger stuff
-
+// gsap.to("._rylic_port_shape_ball", {
+//   y: 200,
+//   rotation: 360,
+//   scrollTrigger: {
+//     trigger: "._rylic_port_shape_ball",
+//     markers: true,
+//     scrub: true,
+//   }
+// });
