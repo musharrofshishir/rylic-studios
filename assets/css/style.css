@@ -1140,6 +1140,23 @@ ul {
     display: flex;
     align-items: baseline;
     gap: 0 16px;
+    animation: hueAnimation 15s ease-in-out infinite;
+    transition: .2s all ease;
+}
+
+._cta_btn:hover {
+    animation-play-state: paused;
+    filter: hue-rotate(0) !important;
+}
+
+@keyframes hueAnimation {
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
 }
 
 ._cta_btn ._rylic_cta_content_btn_txt {
@@ -1249,6 +1266,10 @@ ul {
 }
 
 /* Footer */
+/* Preloader */
+
+
+/* Preloader */
 /* Alpine */
 
 /* Alpine */
