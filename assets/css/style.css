@@ -45,6 +45,11 @@ ul {
     list-style: none;
 }
 
+/* .scrollbar-track {
+    opacity: 1 !important;
+    transition: .2s all ease;
+} */
+
 /* Common CSS */
 /* Fonts */
 @font-face {
@@ -97,6 +102,7 @@ ul {
 /* Fonts */
 /* BIG */
 ._rylic_big_wrapper {
+    overflow: hidden;
     background: linear-gradient(125.17deg, #F1E4E4 -45.13%, #C3BEAE 109.3%);
 }
 
@@ -447,12 +453,14 @@ ul {
 ._rylic_port_slider_inner {
     display: flex;
     justify-content: flex-end;
-    margin: 0 0 0 -25px;
+    /* margin: 0 0 0 -25px; */
+    margin: 0 -100%;
 }
 
 ._rylic_port_slider_arrow_wrap {
     position: relative;
     top: -100px;
+    display: none;
 }
 
 ._port_btn {
@@ -885,7 +893,7 @@ ul {
 }
 
 ._rylic_testimonial_slider {
-    margin-right: -100%;
+    /* margin-right: -100%; */
 }
 
 ._rylic_testimonial_card {
@@ -1074,15 +1082,30 @@ ul {
 
 ._rylic_trusted_content_wrap {
     margin: 50px 0 0;
+    overflow: hidden;
 }
 
 ._rylic_trusted_content {
     margin: 40px 0;
+    display: flex;
+    gap: 0 70px;
 }
 
-._rylic_trusted_content_img {
+._rylic_trusted_content1 {
+    justify-content: center;
+}
+
+._rylic_trusted_content2 {
+    justify-content: flex-end;
+}
+
+/* ._rylic_trusted_content_img {
     width: 164px;
     max-width: 164px;
+    margin: 0 auto;
+} */
+._rylic_trusted_content_img {
+    width: 100%;
     margin: 0 auto;
 }
 
