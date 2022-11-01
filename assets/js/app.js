@@ -35,7 +35,24 @@ new Splide( '._rylic_testimonial_slider',{
   easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
 } ).mount();
 // GSAP
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+let smoother = ScrollSmoother.create({
+  smooth: 2,   // seconds it takes to "catch up" to native scroll position
+  effects: true // look for data-speed and data-lag attributes on elements and animate accordingly
+});
+
+document.querySelector("#processClick").addEventListener("click", e => {
+  // scroll to the spot where .box-c is in the center.
+  // parameters: element, smooth, position
+  // smoother.scrollTo("#process", true, "center center");
+  
+  // or you could animate the scrollTop:
+  gsap.to(smoother, {
+   scrollTop: smoother.offset("#process", "center center"),
+   duration: 1
+  });
+});
 
 // marque animation
 gsap.fromTo('._real_marque_content_ul',{
