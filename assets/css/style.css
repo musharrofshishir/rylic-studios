@@ -1167,7 +1167,7 @@ ul {
     display: flex;
     align-items: baseline;
     gap: 0 16px;
-    animation: hueAnimation 15s ease-in-out infinite;
+    animation: hueAnimation 8s ease-in-out infinite;
     transition: .2s all ease;
 }
 
