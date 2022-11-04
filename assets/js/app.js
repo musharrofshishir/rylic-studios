@@ -36,6 +36,7 @@ new Splide( '._rylic_testimonial_slider',{
 } ).mount();
 // GSAP
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+// gsap.registerPlugin(ScrollTrigger);
 
 let smoother = ScrollSmoother.create({
   smooth: 2,   // seconds it takes to "catch up" to native scroll position
@@ -137,15 +138,16 @@ gsap.from('._rylic_process_content_mid_li',{
     start: "top center"
   }
 })
-gsap.from('._rylic_project_card',{
+gsap.from('._rylic_project_card_image_wrap',{
   y:50,
   duration:.3,
   ease:"Power4.out",
   scrollTrigger:{
-    trigger: '._rylic_project_card_image ',
-    scrub:1,
+    trigger: '._rylic_project_card_image_wrap',
+    scrub:1
     // start: "top center"
-  }
+  },
+  stagger:true
 })
 gsap.from('._real_marque_shape',{
   y:75,
@@ -158,9 +160,11 @@ gsap.from('._real_marque_shape',{
   },
 })
 gsap.from('._real_marque_content_wrap',{
-  y:-70,
+  y:-90,
   rotation:5,
   ease:'Power3.out',
+  duration:.2,
+  opacity:0.8,
   scrollTrigger:{
     trigger: '._real_marque_wrap',
     scrub:1
